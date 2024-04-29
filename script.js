@@ -9,7 +9,8 @@ function sutitZinu()
 }
 async function ieladetChataZinas()
 {
-    let datiNoServera= await fetch('chatazinas.txt');
+    let datiNoServera = await fetch('chatazinas.txt');
     let dati =await datiNoServera.text;
-    console.log(dati);
+    //console.log(dati);
+    zinas.innerHTML = dati;
 }
